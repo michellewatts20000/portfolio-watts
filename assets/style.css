@@ -3,21 +3,20 @@
     color:black;
 }
 
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color:magenta;
+}
+
 header {
-    background: darkmagenta;
-    height:100px;
-    width:100%;
-    position: fixed;
-    top:0;
+  position: fixed;
+  border-bottom: 10px greenyellow;
 }
 
 
-
-
-
-
-footer {
-background-color: darkmagenta;
-height:100px;
-max-width:100%;
+main {
+    margin:20px;
 }
