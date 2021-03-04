@@ -1,10 +1,14 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
 :root {
   --white: #fff;
   --zeus: #261f17;
-  --green-yellow:#c2ff1c;
-  --christi:#37bf18;
-  --pine:#007c6a;
-  --elephant:#11443e;
+  --green-yellow: #c2ff1c;
+  --christi: #37bf18;
+  --pine: #007c6a;
+  --elephant: #11443e;
   --border-radius: 50px;
 }
 
@@ -16,26 +20,23 @@ body {
 
 header {
   display: flex;
+  position: sticky;
   justify-content: space-between;
   align-items: center;
-  padding: 4%;
+  padding: 3%;
   background-color: var(--zeus);
   color: var(--white);
 }
 
-h1 {
-  font-size: 200%;
-}
-
-h2 {
-  margin: 2% 0;
-  font-size: 250%;
-}
-
 nav ul {
   display: flex;
+  
   justify-content: space-between;
   min-width: 300px;
+}
+
+nav ul li{
+ margin:10px;
 }
 
 nav a {
@@ -48,11 +49,28 @@ nav a:hover {
   color: var(--white);
 }
 
+h1 {
+  font-size: 175%;
+  margin: 1% 0;
+}
+
+h2 {
+  margin: 1% 0;
+  font-size: 150%;
+}
+
+p {
+  font-size: 100%;
+  margin-top:10px;
+  font-family: 'Roboto', sans-serif;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
   max-width: 96%;
-  margin: 2%;
+  height: 100%;
+  
 }
 
 
@@ -61,30 +79,29 @@ main {
   padding: 10px;
   text-align: center;
   border: 0px solid var(--zeus);
-  margin:10px;
+  margin: 10px;
 }
 
 
 .project {
-  flex: 1 0 0;
+  flex: 1 1 200px;
   padding: 10px;
   text-align: center;
   border: 1px solid var(--zeus);
-  margin:10px;
+  margin: 10px;
 }
 
-.project header {
-  padding: 20px;
-  background:var(--white);
+.project h2 {
+  background: var(--white);
   color: var(--christi);
 }
 
 .contact {
   flex: 1 0 96%;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border: 0px solid var(--zeus);
-  margin:10px;
+  margin: 10px;
 }
 
 
@@ -92,8 +109,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2%;
-  background-color:var(--zeus);
-  color:var(--white);
+  background-color: var(--zeus);
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
@@ -104,4 +121,13 @@ footer {
   main {
     max-width: 1200px;
   }
+
+  .project {
+    flex: 1 1 96%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--zeus);
+    margin: 10px;
+  }
+
 }
