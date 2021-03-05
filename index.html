@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Selectors with CSS</title>
+  <title>Michelle Watts Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,14 +13,14 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <h1>Michelle Watts Portfolio</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#me">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -28,43 +28,64 @@
 
 
 
-  <main>
-    <section class="about">
-      <h2>About me</h2>
-      <p>dhfalsdf'alisdjfl'asdkjf'l</p>
-    </section>
+<main>
+    <article class="container-1">
+      <section>
+        <img src="assets/images/profile-pic.jpg">
+      </section>
+      <section>
+        <h2 class="green">About me</h2>
+        <p>Hello! My name is Michelle Watts. I am learning coding right now and hope to fill this page with more work by
+          the end of the course.</p>
+      </section>
 
-    <section class="project">
-      <h2>Project 1</h2>
-      <p>dhfalsdf'alisdjfl'asdkjf'l</p>
+ 
+
+    </article>
 
 
-    </section>
-    <section class="project">
-      <h2>Project 2</h2>
-      <p>dhfalsdf'alisdjfl'asdkjf'l</p>
 
-    </section>
-    <section class="project">
-      <h2>Project 3</h2>
-      <p>dhfalsdf'alisdjfl'asdkjf'l</p>
 
-    </section>
-    <section class="project">
-      <h2>Project 4</h2>
-      <p>dhfalsdf'alisdjfl'asdkjf'l</p>
+    <article class="container-2">
+      <section class="box-1">
+        <h2>Homework Week 1</h2>
+        <p>This is my homework assignment for week 1, University of Sydney Bootcamp. I've added semantic markup, alt
+          tags
+          and consolidated some css styles.&nbsp;
+          <a id="work" href="https://michellewatts20000.github.io/Homework-Week1-MWatts/">Link to GitHub page</a>
+        </p>
+      </section>
 
-    </section>
+      <section class="box-2">
+        <h2>Spreadsheet automation using GAS</h2>
+        <p>Automating email sends from Google sheets can be used for a service your NGO looks after.&nbsp;<a
+            href="https://github.com/michellewatts20000/GAS-automation">Link to my GitHub repo</a></p>
+      </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>email: <a href="mailto:watts.e.michelle@gmail.com">watts.e.michelle@gmail.com</a></p>
-      <p>github: <a href="https://github.com/michellewatts20000">https://github.com/michellewatts20000</a></p>
-    </section>
+      <section class="box-3">
+        <h2>Future work placeholder</h2>
+        <p>Eventually I'll have more work that I can add in here.&nbsp;<a href="#">Link to my GitHub repo</a></p>
+      </section>
+      <section class="box-4">
+        <h2>Future work placeholder 2</h2>
+        <p>Eventually I'll have more work that I can add in here.&nbsp;<a
+            href="https://github.com/michellewatts20000/GAS-automation">Link to my GitHub repo</a></p>
+      </section>
+    </article>
+
+    <article>
+
+      <section class="container-3">
+        <h2 class="green">Contact</h2>
+        <p>Email: <a href="mailto:watts.e.michelle@gmail.com">watts.e.michelle@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/michellewatts20000">github.com/michellewatts20000</a></p>
+      </section>
+    </article>
   </main>
 
+
   <footer>
-    <span>Michelle Watts Portfolio</span>
+    <h5>&copy Michelle Watts Portfolio</h5>
   </footer>
 </body>
 
