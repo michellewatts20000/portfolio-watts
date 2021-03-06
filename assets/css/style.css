@@ -32,9 +32,10 @@ header {
 
 
 
-article .container-2, article .container-1{
+article .container-2,
+article .container-1 {
 
-margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .container-1,
@@ -54,7 +55,16 @@ margin-bottom:30px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
- 
+  width: 100%;
+  padding: 0;
+}
+
+
+.container-2 img {
+  max-width: 100%;
+
+  display: block;
+  align-self: center;
 }
 
 nav ul {
@@ -98,7 +108,7 @@ h2 {
   background: var(--white);
   color: var(--christi);
   display: inline-block;
-  padding-right:15px;
+  padding-right: 15px;
 }
 
 
@@ -130,27 +140,31 @@ p a:visited {
 
 
 .container-2 section {
-  border: solid 1px var(--zeus);
-  margin: 10px;
-  padding: 20px;
- 
+  /* border: solid 1px var(--zeus); */
+  margin: 0px;
+  padding: 0px;
+
 }
 
 
 .box-1 {
-  flex: 3 1 300px;
+  flex: 2 0;
+
 }
 
 .box-2 {
-  flex: 1 1 200px;
+  flex: 1 0;
+  border-right: 1px solid var(--white);
 }
 
 .box-3 {
-  flex: 1 1 200px;
+
+  flex: 1 0;
+  border-right: 1px solid var(--white);
 }
 
 .box-4 {
-  flex: 1 1 200px;
+  flex: 1 0;
 }
 
 
@@ -158,9 +172,9 @@ p a:visited {
 
 
 
-img {
+.container-1 img {
   width: 200px;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 
@@ -181,6 +195,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
   .container-1 {
     flex-direction: column;
     align-items: center;
@@ -189,15 +204,15 @@ footer {
 
   .container-2 {
     flex-direction: column;
-    
-    
+
+
   }
 
-.container-3 {
-  flex-direction: column;
-  text-align: center;
-  align-items: stretch;
-}
+  .container-3 {
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+  }
 
 
   nav ul {
@@ -205,6 +220,20 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     min-width: 300px;
+  }
+
+  .box-2 {
+    border-top: 1px solid var(--white);
+    border-right: none;
+  }
+
+  .box-3 {
+    border-top: 1px solid var(--white);
+    border-right: none;
+  }
+  .box-4 {
+    border-top: 1px solid var(--white);
+    border-right: none;
   }
 
 }
