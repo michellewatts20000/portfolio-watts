@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -151,8 +150,8 @@ footer {
   border-radius: 0px;
   padding: 0px;
   flex: 1 0 400px;
-  
-  border:none;
+
+  border: none;
 }
 
 aside img {
@@ -165,7 +164,7 @@ h1 {
   margin: 1% 0;
   background-color: var(--white);
   color: var(--christi);
-  padding:1%;
+  padding: 1%;
   display: inline;
 }
 
@@ -235,9 +234,9 @@ article p a:hover {
   h1 {
     font-size: 200%;
     margin: 1% 0;
-    background-color:var(--christi);
+    background-color: var(--christi);
     color: var(--white);
-    padding:1%;
+    padding: 1%;
     display: inline;
   }
 
