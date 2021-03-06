@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Alfa Slab One', cursive;
 }
 
 :root {
   --white: #fff;
   --zeus: rgb(192, 192, 192);
-  --black: #000;
+  --black: rgb(15, 1, 94);
   --green-yellow: #c2ff1c;
-  --christi: #37bf18;
+  --christi:rgba(123, 22, 255, 0.75);
   --pine: #007c6a;
   --elephant: #11443e;
   --border-radius: 50px;
@@ -26,7 +27,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 3%;
-  background-color: var(--christi);
+  background-color: var(--black);
+  background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
   color: var(--white);
 }
 
@@ -48,7 +50,9 @@ nav a {
   color: var(--white);
   font-weight: bold;
   text-decoration: none;
-  font-size: 125%;
+  font-size: 115%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -65,10 +69,11 @@ main {
 aside {
   flex: 1;
   background-color: var(--white);
+  
   padding: 80px;
   text-align: center;
-  color: var(--black);
-  border-right: solid 2px var(--zeus);
+  color: #000;
+  /* border-right: solid 2px var(--zeus); */
 }
 
 article {
@@ -76,11 +81,11 @@ article {
   justify-content: space-around;
   text-align: center;
   padding: 3%;
-  background: var(--christi);
+  background: var(--black);
   color: var(--white);
   align-items: center;
   padding: 3%;
-
+  background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
 
 }
 
@@ -91,7 +96,7 @@ footer {
   text-align: center;
   background: var(--black);
   color: var(--white);
-
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -102,7 +107,7 @@ footer {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-around;
 }
 
 .container h2 {
@@ -114,12 +119,16 @@ footer {
 }
 
 .container .item-1 h2 {
-  background: var(--christi);
+  background: var(--black);
+  /* background: linear-gradient(rgb(123, 22, 255), rgb(113, 20, 234)) rgb(123, 22, 255); */
   color: var(--white);
   padding: 20px;
   position: relative;
   top: 0px;
+ 
 }
+
+
 
 .project {
   border-radius: 0px;
@@ -129,12 +138,15 @@ footer {
   border: 1px solid var(--black);
 }
 
+/* section {
+  text-decoration: none !important;
+} */
 
 
 .project h2 {
   padding: 20px;
   text-align: center;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .project p {
@@ -145,11 +157,24 @@ footer {
   width: 100%;
 }
 
-.item-1 {
+.item-1 h2 {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 
+.item-1 p {
+  text-align: center;
+}
+
+.item-1 img {
+  width: 100%;
+}
+
+.item-1 {
   border-radius: 0px;
   padding: 0px;
-  flex: 1 0 400px;
+  flex: 1 0 450px;
 
   border: none;
 }
@@ -162,8 +187,8 @@ aside img {
 h1 {
   font-size: 200%;
   margin: 1% 0;
-  background-color: var(--white);
-  color: var(--christi);
+  
+  color: var(--white);
   padding: 1%;
   display: inline;
 }
@@ -174,6 +199,7 @@ h2 {
 
 h5 {
   font-size: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -225,6 +251,11 @@ article p a:hover {
     padding: 0;
   }
 
+
+  .item-1 {
+    flex: 1 0 350px;
+
+  }
   .project {
     border: none;
     margin: 0;
@@ -234,12 +265,16 @@ article p a:hover {
   h1 {
     font-size: 200%;
     margin: 1% 0;
-    background-color: var(--christi);
+    background-color: transparent;
     color: var(--white);
     padding: 1%;
     display: inline;
   }
 
+
+  header, article {
+    background-image: none;;
+  }
 
 
 }
