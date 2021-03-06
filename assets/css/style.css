@@ -49,6 +49,7 @@ nav a {
   color: var(--white);
   font-weight: bold;
   text-decoration: none;
+  font-size: 125%;
 }
 
 nav a:hover {
@@ -89,7 +90,7 @@ footer {
   flex-shrink: 0;
   padding: 20px;
   text-align: center;
-  background: var(--christi);
+  background: var(--black);
   color: var(--white);
 
 
@@ -102,7 +103,7 @@ footer {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .container h2 {
@@ -125,7 +126,7 @@ footer {
   border-radius: 0px;
   padding: 0px;
   flex: 0 0 250px;
-  margin: 5px;
+  /* margin: 5px; */
   border: 1px solid var(--black);
 }
 
@@ -149,8 +150,8 @@ footer {
 
   border-radius: 0px;
   padding: 0px;
-  flex: 5 0 400px;
-  margin: 5px;
+  flex: 1 0 400px;
+  
   border:none;
 }
 
@@ -204,6 +205,10 @@ article p a:hover {
     flex-direction: column;
   }
 
+  nav a {
+    font-size: 100%;
+  }
+
   header {
     text-align: center;
   }
@@ -211,6 +216,10 @@ article p a:hover {
   aside {
     border-right: none;
     padding: 5%;
+  }
+
+  article {
+    padding: 3%;
   }
 
   .container {
@@ -221,6 +230,15 @@ article p a:hover {
     border: none;
     margin: 0;
     flex: 1 0 350px;
+  }
+
+  h1 {
+    font-size: 200%;
+    margin: 1% 0;
+    background-color:var(--christi);
+    color: var(--white);
+    padding:1%;
+    display: inline;
   }
 
 
