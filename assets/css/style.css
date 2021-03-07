@@ -136,7 +136,7 @@ footer {
 .project {
   border-radius: 0px;
   padding: 0px;
-  flex: 0 1 300px;
+  flex: 1 1 300px;
   margin:1%;
   border: 1px solid var(--black);
 }
