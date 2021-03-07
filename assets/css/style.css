@@ -257,6 +257,10 @@ article p a:hover {
     font-size: 100%;
   }
 
+  nav ul{
+    flex-basis: 100%;
+  }
+
   header {
     text-align: center;
   }
@@ -267,8 +271,14 @@ article p a:hover {
   }
 
   article {
-    padding: 3%;
+    padding: 3%;s
+   
   }
+
+ footer, article p {
+   font-size: 75% !important;
+ }
+
 
   .container {
     padding: 0;
@@ -277,7 +287,7 @@ article p a:hover {
 
 
   .item-1 {
-    flex: 2 0 550px;
+    flex: 2 0 100%;
     margin: 0;
 
   }
@@ -285,7 +295,7 @@ article p a:hover {
   .project {
     border: none;
     margin: 0;
-    flex: 1 0 300px;
+    flex: 1 0 100%;
   }
 
   h1 {
