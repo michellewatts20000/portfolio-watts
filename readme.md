@@ -5,3 +5,5 @@ Links to the repo and the live page below.
 
 Link to GitHub page: https://michellewatts20000.github.io/portfolio-watts/.
 Link to GitHub repo: https://github.com/michellewatts20000/portfolio-watts/.
+
+<img src="assets/images/portfolio-screenshot.jpg">

@@ -71,6 +71,8 @@ main {
   flex-wrap: wrap;
   position: relative;
   top: 200px;
+  height: 100%;
+  
 
 }
 
