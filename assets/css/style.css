@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Alfa Slab One', cursive;
   letter-spacing: 2px;
 }
@@ -16,7 +15,7 @@
   --christi: rgba(123, 22, 255, 0.75);
   --pine: #007c6a;
   --elephant: #11443e;
-  --border-radius: 50px;
+
 }
 
 
@@ -26,6 +25,9 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,6 +69,9 @@ nav a:hover {
 main {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  top: 200px;
+
 }
 
 aside {
@@ -74,8 +79,6 @@ aside {
   background-color: var(--white);
   padding: 80px;
   text-align: center;
-
-  /* border-right: solid 2px var(--zeus); */
 }
 
 article {
@@ -88,7 +91,6 @@ article {
   align-items: center;
   padding: 3%;
   background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
-
 }
 
 
@@ -123,7 +125,6 @@ footer {
 
 .container .item-1 h2 {
   background: var(--deep-purple);
-  /* background: linear-gradient(rgb(123, 22, 255), rgb(113, 20, 234)) rgb(123, 22, 255); */
   color: var(--white);
   padding: 20px;
   position: relative;
@@ -139,21 +140,16 @@ footer {
   flex: 0 1 25%;
   margin: 1%;
   border: 1px solid var(--black);
-  
-  /* background: url(https://thumbs.dreamstime.com/b/basic-rgb-135985230.jpg);
-  background-repeat: no-repeat;
-  background-size: auto; */
+
 }
 
-/* section {
-  text-decoration: none !important;
-} */
+
 
 
 .project h2 {
   padding: 20px;
   text-align: center;
-  /* font-family: 'Roboto', sans-serif; */
+
 }
 
 .project p {
@@ -169,8 +165,7 @@ footer {
   padding: 20px;
   text-align: center;
   letter-spacing: 2px;
-  /* text-transform: uppercase; */
-  /* font-family: 'Roboto', sans-serif; */
+
 }
 
 .item-1 p {
@@ -179,7 +174,7 @@ footer {
 
 .item-1 img {
   width: 100%;
-  /* height: 100%; */
+
 }
 
 .item-1 {
@@ -191,7 +186,7 @@ footer {
 }
 
 .item-1 a {
-  height:0px;
+  height: 0px;
 }
 
 a img:hover {
@@ -254,28 +249,33 @@ article p a:hover {
 
 @media screen and (max-width: 1024px) {
 
-nav a {
+  main {
+    top: 120px;
+  }
 
-  font-size:75%;
-}
+  nav a {
+    font-size: 90%;
+  }
 
-.item-1 {
-  border-radius: 0px;
-  padding: 0px;
-  flex: 1 0 75%;
-  margin: 1%;
-  border: none;
-}
+  h1 {
+    font-size: 150%;
+  }
 
-.container {
-  flex: 8;
-  background: var(--white);
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: left;
-}
+  .item-1 {
+    padding: 0px;
+    flex: 1 0 75%;
+    margin: 1%;
+  }
+
+  .container {
+    flex: 8;
+    background: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: left;
+  }
 
 
 }
@@ -296,7 +296,7 @@ nav a {
     font-size: 100%;
   }
 
-  nav ul{
+  nav ul {
     flex-basis: 100%;
     display: inline-block;
   }
@@ -312,12 +312,13 @@ nav a {
 
   article {
     padding: 6%;
-   
+
   }
 
- footer, article p {
-   font-size: 75%;
- }
+  footer,
+  article p {
+    font-size: 75%;
+  }
 
 
   .container {
@@ -351,6 +352,7 @@ nav a {
   header,
   article {
     background-image: none;
+    position: relative;
 
   }
 
@@ -360,6 +362,9 @@ nav a {
     display: block;
   }
 
+  main {
+    top: 0;
+  }
 
 
 }
