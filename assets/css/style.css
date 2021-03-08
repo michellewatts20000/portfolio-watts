@@ -110,7 +110,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .container h2 {
@@ -122,7 +122,7 @@ footer {
 }
 
 .container .item-1 h2 {
-  background: var(--purple);
+  background: var(--deep-purple);
   /* background: linear-gradient(rgb(123, 22, 255), rgb(113, 20, 234)) rgb(123, 22, 255); */
   color: var(--white);
   padding: 20px;
@@ -136,9 +136,10 @@ footer {
 .project {
   border-radius: 0px;
   padding: 0px;
-  flex: 1 1 25%;
+  flex: 0 1 25%;
   margin: 1%;
   border: 1px solid var(--black);
+  /* background-image: url("https://thumbs.dreamstime.com/b/basic-rgb-135985230.jpg"); */
 }
 
 /* section {
@@ -185,6 +186,10 @@ footer {
   border: none;
 }
 
+.item-1 a {
+  height:0px;
+}
+
 a img:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 10px rgba(145, 92, 182, .4);
@@ -196,7 +201,7 @@ aside img {
 }
 
 aside p {
-  coloe: var(--black);
+  color: var(--black);
 }
 
 aside h2 {
@@ -243,6 +248,36 @@ article p a:hover {
 }
 
 
+@media screen and (max-width: 1024px) {
+
+nav a {
+
+  font-size:75%;
+}
+
+.item-1 {
+  border-radius: 0px;
+  padding: 0px;
+  flex: 1 0 75%;
+  margin: 1%;
+  border: none;
+}
+
+.container {
+  flex: 8;
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+
+}
+
+
+
 @media screen and (max-width: 768px) {
 
   main,
@@ -259,6 +294,7 @@ article p a:hover {
 
   nav ul{
     flex-basis: 100%;
+    display: inline-block;
   }
 
   header {
@@ -271,12 +307,12 @@ article p a:hover {
   }
 
   article {
-    padding: 3%;s
+    padding: 6%;
    
   }
 
  footer, article p {
-   font-size: 75% !important;
+   font-size: 75%;
  }
 
 
