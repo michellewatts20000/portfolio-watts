@@ -200,7 +200,9 @@ article p a:hover {
   border: 1px solid var(--black);
 }
 
-
+.project img {
+  display: block;
+}
 
 
 .project h2 {
